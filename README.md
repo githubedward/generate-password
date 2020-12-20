@@ -1,1 +1,1 @@
-# Password Generator Starter Code
+# A Simple Password Generator exercise
