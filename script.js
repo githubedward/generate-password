@@ -61,6 +61,11 @@ function generatePassword() {
 
 // Write password to the #password input
 function writePassword() {
+  var passwordText = document.querySelector("#password");
+
+  // reset password value
+  passwordText.value = "";
+
   var password = generatePassword();
   if (!password || !password.length) {
     alert("Generate password NOT successful");
@@ -69,8 +74,8 @@ function writePassword() {
 
   alert("Congratulations, a password has been created!");
 
-  var passwordText = document.querySelector("#password");
-  passwordText.value = password;
+  // update password text
+  passwordText.value = password;  
 }
 
 // Get references to the #generate element
